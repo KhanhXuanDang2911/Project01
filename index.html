@@ -5,13 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <!-- reset css -->
     <link rel="stylesheet" href="/assets/css/reset.css">
+    <!-- style.css -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <h1>Hello xin chao</h1>
-    <h2>Demo</h2>
+<body style="height: 10000px;">
+    <header class="header fixed">
+        <!-- class main-content để tái sử dụng độ rộng của các phần tử qua các phần -->
+        <div class="main-content">
+            <div class="body-header">
+                <!-- logo -->
+                <img src="./assets/img/Lesson..svg" alt="Lesson." class="logo">
+                <!-- nav là 1 thẻ có ngữ nghĩa, cho trình duyệt biết rằng đó là thanh menu hoặc là thanh điều hướng của website-->
+                <nav class="nav">
+                    <ul class="ul-nav">
+                        <li class="active">
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#!">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Reviews</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- btn-action -->
+                <div class="action">
+                    <a href="" class="btn btn--sign-up">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>

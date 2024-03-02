@@ -9,3 +9,83 @@ html{
 body{
     font-size: 1.6rem;
 }
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    background: rgb(255, 176, 57);
+}
+.header.fixed{
+    position: sticky;
+    position: -webkit-sticky;
+    top: -28px;
+}
+a{
+    text-decoration: none;
+}
+.header .body-header{
+    display: flex;
+    align-items: center;
+    /* nên dùng padding để cách nội dung ra chứ nếu dùng margin thì phần tử cha cũng đi theo, tí tô màu vàng thì sẽ tô dc mỗi dòng 
+    thôi chứ ko tô rộng ra phần đã dc cách được */
+    padding-top: 36px;
+    padding-bottom: 8px;
+}
+.nav ul{
+    display: flex;
+}
+.nav{
+    margin-left: auto;
+}
+.ul-nav a{
+    color: #413f31;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    /* nên dùng padding thay margin để giãn kích thước bởi vì sẽ tăng kích thước vùng trỏ chuột */
+    padding: 8px 21px;
+    position: relative;
+
+}
+.nav li.active, .nav a:hover{
+    color: #171100;
+    font-family: Poppins;
+    /* dùng font-weight thì làm cho khi rờ vào phần từ giật giật xấu hơn */
+    /* font-weight: 600; */
+    /* thay vào đó hãy dùng text-shadow*/
+    text-shadow: 1px 0 0 currentColor;
+}
+/* sau thẻ a là thực chất nó thêm vào sau nội dung thẻ a luôn, ví dụ <a>Home + after::...</a> */
+.nav li.active a::after{
+    content:"";
+    display: block;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+}
+.btn{
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    background-color: #171100;
+    color: #fff;
+    border-radius: 999px;
+    text-shadow: 1px 0 0 currentColor;
+    /* !important */
+    padding: 0px 41px;
+    line-height: 50px;
+    min-width: 118px;
+}
+.header .btn--sign-up{
+    min-width: 144px;
+}
+.header .action{
+    margin-left: 49px;
+}
