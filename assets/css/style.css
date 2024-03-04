@@ -321,7 +321,7 @@ main .popular{
 .popular-mid-bot .infor-head .point{
     color: #FEA31B;
     font-weight: 400;
-    line-height: 28px; /* 175% */
+    line-height: 28px;
 }
 .popular-mid-bot .desc-infor{
     width: 326px;
@@ -339,4 +339,7 @@ main .popular{
 }
 .popular-mid-bot .item1 .sell .btn{
     background-color: #FFB900;
+}
+.popular-mid-bot .item img{
+    object-fit: cover;
 }
